@@ -1,0 +1,134 @@
+header{
+  height: 250px;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  width: 100%;
+ background-color:rgb(27,34,91);
+ text-align: center;
+}
+
+header p{
+
+  color: white;
+  font-size: 23px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+::selection{background-color: salmon; color: white;}
+.parallax > use{
+  animation:move-forever 12s linear infinite;
+}
+
+@keyframes move-forever{
+  0%{transform: translate(-90px , 0%)}
+  100%{transform: translate(85px , 0%)} 
+}
+
+input[type="text" i] {
+  padding: 1px 2px;
+  border-radius: 25px;
+  height: 25px;
+  margin-top: 15px;
+}
+
+.editorial {
+  display: block;
+  width: 100%;
+  height: 10em;
+  max-height: 100vh;
+  margin: 0;
+}
+
+
+.content {
+
+font-family: 'Lato',sans-serif;  
+  text-align: center;  background-color: #2d55aa;
+  text-align: center;
+  min-height: 75vh;
+  margin: -.1em 0 0 0;
+  padding: 1em;
+  color: #eee;
+  font-size: 2em;
+  font-weight: 300;
+}
+.content{font-size: 1em;}
+
+.content h1 {
+  margin-top:-1.3em;
+  font-weight: 100;
+  font-size: 5em;
+  user-select:none;
+  cursor: default;
+  justify-content: end;
+}
+
+/*prevent many large-by-comparison ripples by shrinking the height*/
+@media (max-width:50em){
+  .content h1{font-size: 12vmax}
+  .editorial{height:17vw;}
+}
+
+h1{outline:none}
+
+footer {
+  background-color:white;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 10rem;
+  margin-top: 5rem;
+}
+
+button{
+  background-color:white;
+border-color: transparent;
+color: gray;}
+
+button:hover{
+color:rgb(120,87,250);}
+
+body{
+  background-color:rgb(174,182,204);
+
+}
+.button1{
+
+   background-color: rgb(120,87,250);
+   height: 180px;
+   text-align: left;
+   border-radius: 25px;
+   cursor: pointer;
+   font-size: 30px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+   width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+.button2 .button3{
+  background-color:rgb(198,187,247);
+  height: 50px;
+  text-align: left;
+  border-radius: 25px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  width:32%;
+cursor: pointer;
+
+}
+
+.button2{
+
+  background-color: rgb(120,87,250);
+  height: 180px;
+  text-align: left;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
